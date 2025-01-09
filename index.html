@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Belajar DOM</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-image: url(img/bg/background.png);
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      .body {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 20px;
+      }
+
+      .container {
+        text-align: center;
+        border-radius: 20px;
+        background-color: whitesmoke;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid rgb(196, 194, 194);
+        justify-content: center;
+        box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.337);
+        transition: transform 0.3s ease;
+      }
+
+      .container p {
+        text-align: justify;
+      }
+
+      .main {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+
+      .first-date {
+        width: 90%;
+      }
+
+      img {
+        border-radius: 10px;
+        object-fit: cover;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.237);
+      }
+
+      .container:hover {
+        transform: scale(1.05);
+      }
+
+      .container:active {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <audio src="audio/ChristinaPerriAThousandYears.mp3" autoplay loop></audio>
+    <h1>❤️ Our story ❤️</h1>
+    <div class="body">
+      <!-- first date -->
+      <div class="container">
+        <div class="main">
+          <div class="first-date">
+            <div class="img-cover">
+              <h2>First Date</h2>
+              <img
+                src="img/firstdate/IMG_20241109_112850.jpg"
+                alt=""
+                width="150px"
+              />
+              <img
+                src="img/firstdate/IMG_20241109_112904.jpg"
+                alt=""
+                width="150px"
+              />
+              <h4>9 November 2024</h4>
+              <p>
+                First date yang masih penuh rasa canggung di Bebek Om Aris,
+                Galuhmas. Meski agak kaku, dan ini menjadi awal cerita kita.
+                🦆❤️
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- second Date -->
+      <div class="container">
+        <div class="main">
+          <div class="first-date">
+            <div class="img-cover">
+              <h2>Second Date</h2>
+              <img
+                src="img/seconddate/IMG_20241129_153519.jpg"
+                alt=""
+                width="150px"
+              />
+              <img
+                src="img/seconddate/IMG-20241129-WA0052.jpg"
+                alt=""
+                width="150px"
+                height="200px"
+              />
+              <h4>29 November 2024</h4>
+              <p>
+                Dari canggung jadi nyaman, dari obrolan malu-malu jadi tawa
+                lepas. Second date kita jadi lebih berarti saat kita benar-benar
+                bisa menikmati waktu berdua 💕 #NoMoreCanggung #MoreMemories
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Third Date -->
+      <div class="container">
+        <div class="main">
+          <div class="first-date">
+            <div class="img-cover">
+              <h2>Third Date</h2>
+              <img
+                src="img/thirddate/IMG_20241208_162356.jpg"
+                alt=""
+                width="150px"
+              />
+              <img
+                src="img/thirddate/IMG_20241208_162612.jpg"
+                alt=""
+                width="150px"
+              />
+              <h4>8 Desember 2024</h4>
+              <p>
+                Bukan cuma buku yang aku temukan di sini, tapi juga cerita baru
+                tentang kita. 📚✨ #Kebersamaan
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- IT Exhibition -->
+      <div class="container">
+        <div class="main">
+          <div class="first-date">
+            <div class="img-cover">
+              <h2>IT Exhibition</h2>
+              <img src="img/itexhibition/1.jpg" alt="" width="150px" />
+              <img src="img/itexhibition/2.jpg" alt="" width="150px" />
+              <h4>14 Desember 2024</h4>
+              <p>
+                Pas IT Exhibition untungnya kita satu kelompok jadi aku bisa
+                terbantu karna adanya kamu ❤️
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Ice Skating -->
+      <div class="container">
+        <div class="main">
+          <div class="first-date">
+            <div class="img-cover">
+              <h2>Ice Skating</h2>
+              <img src="img/iceskating/1.jpg" alt="" width="150px" />
+              <img src="img/iceskating/2.jpg" alt="" width="150px" />
+              <h4>16 Desember 2024</h4>
+              <p>Di dinginnya es, ada hangatnya tawa yang kamu bawa. ⛸️✨</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- After Ice Skating -->
+      <div class="container">
+        <div class="main">
+          <div class="first-date">
+            <div class="img-cover">
+              <h2>After Ice Skating</h2>
+              <img
+                src="img/photobooth/2.jpg"
+                alt=""
+                height="200px"
+                width="150px"
+              />
+              <img src="img/photobooth/1.jpg" alt="" width="150px" />
+              <h4>16 Desember 2024</h4>
+              <p>Senang rasanya bisa mencintai perempuan seindah kamu 💕</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Study Date -->
+      <div class="container">
+        <div class="main">
+          <div class="first-date">
+            <div class="img-cover">
+              <h2>Study Date</h2>
+              <img
+                src="img/studydate/2.jpg"
+                alt=""
+                height="200px"
+                width="150px"
+              />
+              <img src="img/studydate/1.jpg" alt="" width="150px" />
+              <h4>18 Desember 2024</h4>
+              <p>
+                Di tengah suara langkah dan hiruk pikuk ada satu sudut tenang di
+                mana kita berbagi cerita dan menekuni halaman demi halaman.
+                Study date ini bukan hanya tentang belajar, tapi tentang
+                bagaimana aku semakin mengenal dirimu. 📖☕❤️
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
