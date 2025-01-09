@@ -70,7 +70,12 @@
     </style>
   </head>
   <body>
-    <audio src="audio/ChristinaPerriAThousandYears.mp3" autoplay loop></audio>
+    <audio
+      id="audio"
+      src="audio/ChristinaPerriAThousandYears.mp3"
+      autoplay
+      loop
+    ></audio>
     <h1>❤️ Our story ❤️</h1>
     <div class="body">
       <!-- first date -->
@@ -228,3 +233,9 @@
     </div>
   </body>
 </html>
+
+<script>
+  window.onload = function () {
+    document.getElementById("audio").play();
+  };
+</script>
